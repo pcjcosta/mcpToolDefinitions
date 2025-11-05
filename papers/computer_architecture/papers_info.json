@@ -1,0 +1,54 @@
+{
+  "2012.04105v1": {
+    "title": "The Tribes of Machine Learning and the Realm of Computer Architecture",
+    "authors": [
+      "Ayaz Akram",
+      "Jason Lowe-Power"
+    ],
+    "summary": "Machine learning techniques have influenced the field of computer\narchitecture like many other fields. This paper studies how the fundamental\nmachine learning techniques can be applied towards computer architecture\nproblems. We also provide a detailed survey of computer architecture research\nthat employs different machine learning methods. Finally, we present some\nfuture opportunities and the outstanding challenges that need to be overcome to\nexploit full potential of machine learning for computer architecture.",
+    "pdf_url": "http://arxiv.org/pdf/2012.04105v1",
+    "published": "2020-12-07"
+  },
+  "2006.06936v2": {
+    "title": "Does Unsupervised Architecture Representation Learning Help Neural Architecture Search?",
+    "authors": [
+      "Shen Yan",
+      "Yu Zheng",
+      "Wei Ao",
+      "Xiao Zeng",
+      "Mi Zhang"
+    ],
+    "summary": "Existing Neural Architecture Search (NAS) methods either encode neural\narchitectures using discrete encodings that do not scale well, or adopt\nsupervised learning-based methods to jointly learn architecture representations\nand optimize architecture search on such representations which incurs search\nbias. Despite the widespread use, architecture representations learned in NAS\nare still poorly understood. We observe that the structural properties of\nneural architectures are hard to preserve in the latent space if architecture\nrepresentation learning and search are coupled, resulting in less effective\nsearch performance. In this work, we find empirically that pre-training\narchitecture representations using only neural architectures without their\naccuracies as labels considerably improve the downstream architecture search\nefficiency. To explain these observations, we visualize how unsupervised\narchitecture representation learning better encourages neural architectures\nwith similar connections and operators to cluster together. This helps to map\nneural architectures with similar performance to the same regions in the latent\nspace and makes the transition of architectures in the latent space relatively\nsmooth, which considerably benefits diverse downstream search strategies.",
+    "pdf_url": "http://arxiv.org/pdf/2006.06936v2",
+    "published": "2020-06-12"
+  },
+  "cs/0105008v1": {
+    "title": "Applying Slicing Technique to Software Architectures",
+    "authors": [
+      "Jianjun Zhao"
+    ],
+    "summary": "Software architecture is receiving increasingly attention as a critical\ndesign level for software systems. As software architecture design resources\n(in the form of architectural specifications) are going to be accumulated, the\ndevelopment of techniques and tools to support architectural understanding,\ntesting, reengineering, maintenance, and reuse will become an important issue.\nThis paper introduces a new form of slicing, named architectural slicing, to\naid architectural understanding and reuse. In contrast to traditional slicing,\narchitectural slicing is designed to operate on the architectural specification\nof a software system, rather than the source code of a program. Architectural\nslicing provides knowledge about the high-level structure of a software system,\nrather than the low-level implementation details of a program. In order to\ncompute an architectural slice, we present the architecture information flow\ngraph which can be used to represent information flows in a software\narchitecture. Based on the graph, we give a two-phase algorithm to compute an\narchitectural slice.",
+    "pdf_url": "http://arxiv.org/pdf/cs/0105008v1",
+    "published": "2001-05-05"
+  },
+  "2306.13572v1": {
+    "title": "Thoughts on Architecture",
+    "authors": [
+      "Paul S. Rosenbloom"
+    ],
+    "summary": "The term architecture has evolved considerably from its original Greek roots\nand its application to buildings and computers to its more recent manifestation\nfor minds. This article considers lessons from this history, in terms of a set\nof relevant distinctions introduced at each of these stages and a definition of\narchitecture that spans all three, and a reconsideration of three key issues\nfrom cognitive architectures for architectures in general and cognitive\narchitectures more particularly.",
+    "pdf_url": "http://arxiv.org/pdf/2306.13572v1",
+    "published": "2023-06-23"
+  },
+  "2105.13258v1": {
+    "title": "NAAS: Neural Accelerator Architecture Search",
+    "authors": [
+      "Yujun Lin",
+      "Mengtian Yang",
+      "Song Han"
+    ],
+    "summary": "Data-driven, automatic design space exploration of neural accelerator\narchitecture is desirable for specialization and productivity. Previous\nframeworks focus on sizing the numerical architectural hyper-parameters while\nneglect searching the PE connectivities and compiler mappings. To tackle this\nchallenge, we propose Neural Accelerator Architecture Search (NAAS) which\nholistically searches the neural network architecture, accelerator\narchitecture, and compiler mapping in one optimization loop. NAAS composes\nhighly matched architectures together with efficient mapping. As a data-driven\napproach, NAAS rivals the human design Eyeriss by 4.4x EDP reduction with 2.7%\naccuracy improvement on ImageNet under the same computation resource, and\noffers 1.4x to 3.5x EDP reduction than only sizing the architectural\nhyper-parameters.",
+    "pdf_url": "http://arxiv.org/pdf/2105.13258v1",
+    "published": "2021-05-27"
+  }
+}
