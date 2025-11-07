@@ -1,0 +1,72 @@
+```
++-----------------------------------------------+
+|           MODEL CONTEXT PROTOCOL (MCP)        |
++-----------------------------------------------+
+
++-----------------------+    +----------------------+
+|     PARTICIPANTS      |    |        LAYERS        |
++-----------------------+    +----------------------+
+| - MCP Host            |    | 1. Data Layer        |
+| - MCP Client          |    | 2. Transport Layer   |
+| - MCP Server          |    +----------------------+
++-----------------------+    
+
++-----------------------------------------------+
+|                 DATA LAYER                    |
++-----------------------------------------------+
+|                                               |
+| +-------------------+  +--------------------+ |
+| |  LIFECYCLE MGMT   |  |     PRIMITIVES     | |
+| +-------------------+  +--------------------+ |
+| | - Initialize      |  | SERVER PRIMITIVES:  | |
+| | - Negotiation     |  | - Tools             | |
+| | - Termination     |  | - Resources         | |
+| +-------------------+  | - Prompts           | |
+|                        |                      | |
+|                        | CLIENT PRIMITIVES:   | |
+|                        | - Sampling           | |
+|                        | - Elicitation        | |
+|                        | - Logging            | |
+|                        +--------------------+ |
+|                                               |
+| +-------------------+  +--------------------+ |
+| |   NOTIFICATIONS   |  |      JSON-RPC      | |
+| +-------------------+  +--------------------+ |
+| | - Tools Changed   |  | - Request/Response | |
+| | - Real-time       |  | - Method calls     | |
+| |   updates         |  | - Parameters       | |
+| +-------------------+  +--------------------+ |
++-----------------------------------------------+
+
++-----------------------------------------------+
+|              TRANSPORT LAYER                  |
++-----------------------------------------------+
+| +-------------------+  +--------------------+ |
+| |  STDIO TRANSPORT  |  | STREAMABLE HTTP    | |
+| +-------------------+  +--------------------+ |
+| | - Local processes |  | - Remote servers   | |
+| | - Same machine    |  | - HTTP POST        | |
+| | - Direct I/O      |  | - Server-Sent      | |
+| | - No network      |  |   Events           | |
+| |   overhead        |  | - Authentication   | |
+| +-------------------+  +--------------------+ |
++-----------------------------------------------+
+
++-----------------------------------------------+
+|             INTERACTION FLOW                  |
++-----------------------------------------------+
+|                                               |
+|  1. Lifecycle: Initialize & Capability        |
+|     Negotiation                               |
+|                                               |
+|  2. Tool Discovery: Client requests available |
+|     tools from server                         |
+|                                               |
+|  3. Tool Execution: Client invokes server     |
+|     tools with appropriate arguments          |
+|                                               |
+|  4. Real-time Updates: Server sends           |
+|     notifications about changes               |
+|                                               |
++-----------------------------------------------+
+```
